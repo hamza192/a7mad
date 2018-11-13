@@ -23,7 +23,7 @@ client.on('ready', () => {
     console.log(`in ${client.guilds.size} servers `)
     console.log(`[Codes] ${client.users.size}`)
 });
-const prefix = "10"
+const prefix = "as"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
@@ -356,7 +356,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "314135031029170197") return;
+  if (message.author.id !== "321831560061911040") return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
@@ -400,4 +400,4 @@ if (message.content.startsWith(prefix + 'setplay')) {
 });
 
 
-client.login(process.env.BOT_TOKEN2); 
+client.login(process.env.BOT_TOKEN); 
